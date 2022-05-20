@@ -3,7 +3,7 @@ import CartBlock from './CartBlock';
 
 function Header() {
   return (
-    <div className="flex">
+    <div className="flex h-[80px] justify-between">
       <div>
         <Link to="/">Game Store</Link>
       </div>
