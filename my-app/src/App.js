@@ -1,5 +1,11 @@
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 function App() {
-  return <div className="App">Clean</div>;
+  return (
+    <Router>
+      <div className="App">12</div>;
+    </Router>
+  );
 }
 
 export default App;
