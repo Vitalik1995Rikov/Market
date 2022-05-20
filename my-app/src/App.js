@@ -1,9 +1,16 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import Header from './components/Header';
 
 function App() {
   return (
     <Router>
-      <div className="App">12</div>;
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+        </Routes>
+      </div>
     </Router>
   );
 }
