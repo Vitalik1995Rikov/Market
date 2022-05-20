@@ -4,6 +4,7 @@ function CartBlock() {
   return (
     <div>
       <BsCart />
+      <p>2333 p.</p>
     </div>
   );
 }
