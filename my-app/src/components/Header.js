@@ -3,7 +3,7 @@ import CartBlock from './CartBlock';
 
 function Header() {
   return (
-    <div>
+    <div className="flex">
       <div>
         <Link to="/">Game Store</Link>
       </div>
