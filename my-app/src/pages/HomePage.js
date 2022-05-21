@@ -1,3 +1,5 @@
+import GameItem from '../components/GameItem';
+
 const GAMES = [
   {
     image: '/game-covers/forza_5.jpeg',
@@ -62,7 +64,13 @@ const GAMES = [
 ];
 
 function HomePage() {
-  return <div>Home</div>;
+  return (
+    <div>
+      {GAMES.map((item) => (
+        <GameItem game={item} key={item.id} />
+      ))}
+    </div>
+  );
 }
 
 export default HomePage;
