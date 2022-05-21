@@ -65,7 +65,7 @@ const GAMES = [
 
 function HomePage() {
   return (
-    <div>
+    <div className="flex">
       {GAMES.map((item) => (
         <GameItem game={item} key={item.id} />
       ))}
