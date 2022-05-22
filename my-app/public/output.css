@@ -467,8 +467,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.m-\[10px\] {
+  margin: 10px;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-\[10px\] {
@@ -511,8 +519,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1400px;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-black {
@@ -528,6 +552,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#4d4d4d\] {
   --tw-bg-opacity: 1;
   background-color: rgb(77 77 77 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1F1F1F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
 }
 
 .p-\[10px\] {

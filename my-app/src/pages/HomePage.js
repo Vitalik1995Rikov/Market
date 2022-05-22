@@ -65,7 +65,7 @@ const GAMES = [
 
 function HomePage() {
   return (
-    <div className="flex">
+    <div className="grid grid-cols-3">
       {GAMES.map((item) => (
         <GameItem game={item} key={item.id} />
       ))}
