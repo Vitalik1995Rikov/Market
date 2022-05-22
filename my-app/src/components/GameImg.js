@@ -1,9 +1,7 @@
-function GameImg({ game }) {
-  return (
-    <div>
-      <img src={game.img} alt="img" />
-    </div>
-  );
+import React from 'react';
+
+function GameImg({ img }) {
+  return <img src={img} alt="img" />;
 }
 
 export default GameImg;

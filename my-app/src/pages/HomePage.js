@@ -1,3 +1,4 @@
+import React from 'react';
 import GameItem from '../components/GameItem';
 
 const GAMES = [

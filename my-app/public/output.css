@@ -559,6 +559,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(31 31 31 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'img\'\)\] {
+  background-image: url('img');
+}
+
+.bg-\[url\(\$\{game\.image\}\)\] {
+  background-image: url(${game.image});
+}
+
 .p-\[10px\] {
   padding: 10px;
 }
