@@ -6,9 +6,7 @@ function Button({ game }) {
   const dispatch = useDispatch();
   function clickButton(e) {
     e.stopPropagation();
-    console.log(8);
     dispatch(setItemInCart(game));
-    console.log(6);
   }
   return (
     <button
