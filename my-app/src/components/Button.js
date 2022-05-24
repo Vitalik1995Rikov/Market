@@ -4,12 +4,12 @@ import { setItemInCart, deleteItemInCart } from '../redux/cart/reducer';
 
 function Button({ game }) {
   const items = useSelector((state) => state.cart.itemsInCart);
-  const isIteminCart = items.some((item) => item.id === game.id);
+  const isItemInCart = items.some((item) => item.id === game.id);
 
   const dispatch = useDispatch();
   function clickButton(e) {
     e.stopPropagation();
-    if (isIteminCart) {
+    if (isItemInCart) {
       dispatch(deleteItemInCart(game.id));
     } else {
       dispatch(setItemInCart(game));
@@ -18,8 +18,12 @@ function Button({ game }) {
   return (
     <button
       onClick={clickButton}
-      className="bg-[#101010] h-8 w-32 rounded-md flex justify-center items-center">
-      {isIteminCart ? 'Убрать' : 'В корзину'}
+      className={
+        isItemInCart
+          ? 'bg-[#aaa8a8] h-8 w-32 rounded-md flex justify-center items-center'
+          : 'bg-[#101010] h-8 w-32 rounded-md flex justify-center items-center'
+      }>
+      {isItemInCart ? 'Убрать' : 'В корзину'}
     </button>
   );
 }
