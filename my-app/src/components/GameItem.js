@@ -1,6 +1,7 @@
 import GameImg from './GameImg';
 import GameBuy from './GameBuy';
 import Genres from './Genres';
+import React from 'react';
 
 function GameItem({ game }) {
   return (
@@ -13,7 +14,6 @@ function GameItem({ game }) {
             <Genres genre={genre} key={genre} />
           ))}
         </div>
-        {/* <div>{game.genres.map((item) => item)}</div> */}
         <GameBuy game={game} />
       </div>
     </div>
