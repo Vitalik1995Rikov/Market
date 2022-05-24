@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setItemInCart } from '../redux/cart/reducer';
+import { setItemInCart, deleteItemInCart } from '../redux/cart/reducer';
 
 function Button({ game }) {
   const items = useSelector((state) => state.cart.itemsInCart);
@@ -9,7 +9,11 @@ function Button({ game }) {
   const dispatch = useDispatch();
   function clickButton(e) {
     e.stopPropagation();
-    dispatch(setItemInCart(game));
+    if (isIteminCart) {
+      dispatch(deleteItemInCart(game.id));
+    } else {
+      dispatch(setItemInCart(game));
+    }
   }
   return (
     <button

@@ -7,7 +7,7 @@ function CartBlock() {
   return (
     <div className="flex">
       <BsCart className="h-[30px]" />
-      <p className="text-xl">{sumOfPrises}</p>
+      <p className="text-xl">{sumOfPrises} руб.</p>
     </div>
   );
 }
