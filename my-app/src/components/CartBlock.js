@@ -9,7 +9,9 @@ function CartBlock() {
     <div className="flex">
       <BsCart className="h-[30px]" />
       {sumOfPrises ? <p className="text-xl">{sumOfPrises} руб.</p> : null}
-      <CartMenu games={games} sumOfPrices={sumOfPrises} />
+      <div>
+        <CartMenu games={games} sumOfPrices={sumOfPrises} />
+      </div>
     </div>
   );
 }
