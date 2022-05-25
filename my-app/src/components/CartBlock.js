@@ -1,5 +1,6 @@
 import { BsCart } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
+import CartMenu from './CartMenu';
 
 function CartBlock() {
   const games = useSelector((state) => state.cart.itemsInCart);
@@ -8,6 +9,7 @@ function CartBlock() {
     <div className="flex">
       <BsCart className="h-[30px]" />
       {sumOfPrises ? <p className="text-xl">{sumOfPrises} руб.</p> : null}
+      <CartMenu />
     </div>
   );
 }
