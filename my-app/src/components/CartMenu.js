@@ -10,7 +10,7 @@ function CartMenu({ games, sumOfPrices }) {
       </div>
       <div>
         {games.length > 0 ? (
-          <div>
+          <div className="flex flex-row justify-between">
             <span>Итого:</span>
             <span>{sumOfPrices}</span>
           </div>
