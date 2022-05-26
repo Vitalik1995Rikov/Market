@@ -20,7 +20,7 @@ function Button({ game }) {
       onClick={clickButton}
       className={
         isItemInCart
-          ? 'bg-[#aaa8a8] h-8 w-32 rounded-md flex justify-center items-center'
+          ? 'bg-[#4d4d4d] h-8 w-32 rounded-md flex justify-center items-center'
           : 'bg-[#101010] h-8 w-32 rounded-md flex justify-center items-center'
       }>
       {isItemInCart ? 'Убрать' : 'В корзину'}

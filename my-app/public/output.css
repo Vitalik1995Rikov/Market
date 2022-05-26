@@ -467,6 +467,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.left-64 {
+  left: 16rem;
+}
+
+.left-\[-300px\] {
+  left: -300px;
+}
+
+.top-\[40px\] {
+  top: 40px;
+}
+
+.right-\[-300px\] {
+  right: -300px;
+}
+
+.left-\[300px\] {
+  left: 300px;
+}
+
+.left-\[800px\] {
+  left: 800px;
+}
+
+.left-\[1000px\] {
+  left: 1000px;
+}
+
+.top-\[60px\] {
+  top: 60px;
+}
+
 .m-\[20px\] {
   margin: 20px;
 }
@@ -482,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
 }
 
 .flex {
@@ -568,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .bg-\[\#4d4d4d\] {
   --tw-bg-opacity: 1;
   background-color: rgb(77 77 77 / var(--tw-bg-opacity));
@@ -591,6 +639,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#a83737\] {
   --tw-bg-opacity: 1;
   background-color: rgb(168 55 55 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .p-\[20px\] {
