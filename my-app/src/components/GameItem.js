@@ -2,11 +2,11 @@ import GameImg from './GameImg';
 import GameBuy from './GameBuy';
 import Genres from './Genres';
 import React from 'react';
-import useHistory from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 function GameItem({ game }) {
-  const history = useHistory();
+  const history = useNavigate();
   const dispatch = useDispatch();
   const handleClick = () => {
     return;
