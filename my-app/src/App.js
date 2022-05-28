@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import Header from './components/Header';
 import { Provider } from 'react-redux';
 import { store } from './redux';
+import GamePage from './components/GamePage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
+            <Route path="/app" element={<GamePage />}></Route>
           </Routes>
         </div>
       </Router>

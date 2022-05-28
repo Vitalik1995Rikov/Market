@@ -4,12 +4,14 @@ import Genres from './Genres';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { setCurrentGame } from '../redux/games/reducer';
 
 function GameItem({ game }) {
   const history = useNavigate();
   const dispatch = useDispatch();
   const handleClick = () => {
-    return;
+    dispatch(setCurrentGame(game));
+    history('/app');
   };
   return (
     <div className="bg-[#1F1F1F] rounded-xl m-[20px]" onClick={handleClick}>
