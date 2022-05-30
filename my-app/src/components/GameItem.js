@@ -7,11 +7,11 @@ import { useDispatch } from 'react-redux';
 import { setCurrentGame } from '../redux/games/reducer';
 
 function GameItem({ game }) {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(setCurrentGame(game));
-    history('/app');
+    navigate('/app');
   };
   return (
     <div className="bg-[#1F1F1F] rounded-xl m-[20px]" onClick={handleClick}>

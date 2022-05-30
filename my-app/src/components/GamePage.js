@@ -8,13 +8,22 @@ function GamePage() {
   if (!game) return null;
   return (
     <div className="bg-[#1F1F1F] rounded-xl m-[20px]">
-      <div>img</div>
-      <div className="p-[10px]">
-        <h1 className="text-xl">title</h1>
-        <iframe title="video" src={game.video} frameBorder="0"></iframe>
-        <GameImg img={game.image} />
-        <Genres genre={game.genres} />
-        <GameBuy game={game} />
+      <div className="p-[10px] flex">
+        <div>
+          <h1 className="text-xl">{game.title}</h1>
+          <iframe
+            className="h-[400px] w-[600px]"
+            title="video"
+            src={game.video}
+            frameBorder="0"></iframe>
+        </div>
+        <div>
+          <GameImg img={game.image} />
+          <p>{game.description}</p>
+          <p>Теги данного продукта:</p>
+          <Genres genre={game.genres} />
+          <GameBuy game={game} />
+        </div>
       </div>
     </div>
   );
