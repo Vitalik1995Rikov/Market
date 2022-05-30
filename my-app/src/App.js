@@ -4,6 +4,7 @@ import Header from './components/Header';
 import { Provider } from 'react-redux';
 import { store } from './redux';
 import GamePage from './components/GamePage';
+import OrderPage from './components/OrderPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/app" element={<GamePage />}></Route>
+            <Route path="/order" element={<OrderPage />}></Route>
           </Routes>
         </div>
       </Router>
