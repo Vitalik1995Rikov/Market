@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { BsCart } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import CartMenu from './CartMenu';
 import ItemsInCart from './ItemsInCart';
 
@@ -12,7 +12,7 @@ function CartBlock() {
   const navigate = useNavigate();
   const handleClick = useCallback(() => {
     setIsCartMenuVisible(false);
-    navigate.push('/order');
+    navigate('/order');
   }, [navigate]);
   return (
     <div className="flex">

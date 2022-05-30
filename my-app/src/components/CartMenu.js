@@ -1,6 +1,6 @@
 import CartItem from './CartItem';
 
-function CartMenu({ games, sumOfPrices }) {
+function CartMenu({ games, sumOfPrices, onClick }) {
   return (
     <div className="absolute top-[60px] left-[1000px] bg-[#1F1F1F] rounded-2xl">
       <div>
@@ -15,6 +15,9 @@ function CartMenu({ games, sumOfPrices }) {
             <span>{sumOfPrices}</span>
           </div>
         ) : null}
+      </div>
+      <div>
+        <button onClick={onClick}>Оформить</button>
       </div>
     </div>
   );
