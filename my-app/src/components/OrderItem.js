@@ -1,9 +1,10 @@
 import { TiDeleteOutline } from 'react-icons/ti';
 
-function OrderItem() {
+function OrderItem({ game }) {
   return (
-    <div>
-      <div></div>
+    <div className="flex mb-3">
+      <img className="w-[400px] rounded-xl" src={game.image} alt="img" />
+      <div>{game.title}</div>
       <TiDeleteOutline />
     </div>
   );
