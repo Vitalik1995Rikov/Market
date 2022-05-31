@@ -1,5 +1,12 @@
+import { TiDeleteOutline } from 'react-icons/ti';
+
 function OrderItem() {
-  return <div>OrderItem</div>;
+  return (
+    <div>
+      <div></div>
+      <TiDeleteOutline />
+    </div>
+  );
 }
 
 export default OrderItem;
