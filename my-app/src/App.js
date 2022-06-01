@@ -10,7 +10,7 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <div className="bg-[#4d4d4d] text-[#FFFFFF] p-[20px]">
+        <div className="bg-[#4d4d4d] text-[#FFFFFF] p-[20px] h-screen">
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
